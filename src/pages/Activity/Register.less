@@ -1,0 +1,94 @@
+@rem: 100rem;
+:global {
+    body #root {
+        min-width: auto;
+    }
+}
+
+.main {
+    width: 650px;
+    .logo {
+        padding: 42px 0 20px;
+    }
+    .banner {
+        height: 140px;
+        background: url(../../assets/activity/banner.jpg);
+        margin-bottom: -5px;
+        position: relative;
+    }
+    .form {
+        height: 300px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        border: 1px solid rgba(217, 217, 217, .5);
+        margin-top: -5px;
+    }
+    .regForm {
+        width: 256px;
+    }
+    .footer {
+        font-size: 12px;
+        color: #9B9B9B;
+    }
+    .iconUser {
+        width: 18px;
+        height: 18px;
+        background-image: url(../../assets/activity/user.png);
+    }
+    .iconTel {
+        width: 20px;
+        height: 20px;
+        background-image: url(../../assets/activity/tel.png);
+    }
+    .button {
+        background-color: #E62827;
+        border: none;
+        font-size: 17px;
+        height: 40px;
+        line-height: 40px;
+        &:hover {
+            background-color: #CC1717;
+        }
+    }
+    :global {
+        .ant-input-affix-wrapper .ant-input:not(:first-child) {
+            padding-left: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main {
+        width: 650/@rem;
+        .logo {
+            padding: 42/@rem 0 20/@rem;
+        }
+        .banner {
+            height: 140/@rem;
+            background: url(../../assets/activity/bannner@2x.jpg);
+            margin-bottom: -5/@rem;
+            background-size: 100% 100%;
+        }
+        .form {
+            height: 600/@rem;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0/@rem 0/@rem 6/@rem 0/@rem rgba(0, 0, 0, 0.1);
+            border-radius: 5/@rem;
+            border: 1/@rem solid rgba(217, 217, 217, .5);
+            margin-top: -5/@rem;
+        }
+        .regForm {
+            width: 420/@rem;
+        }
+        .footer {
+            font-size: 24/@rem;
+            color: #9B9B9B;
+        }
+        .button {
+            font-size: 34/@rem;
+            height: 80/@rem;
+            line-height: 80/@rem;
+        }
+    }
+}

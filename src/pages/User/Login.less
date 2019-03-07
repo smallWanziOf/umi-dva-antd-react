@@ -1,0 +1,57 @@
+@import '~antd/lib/style/themes/default.less';
+.login {
+    background-image: url(../../assets/bg.png);
+    background-size: 70%;
+    background-position: center 110px;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    .layout {
+        background: none;
+        .top {
+            text-align: center;
+            padding-top: 72px;
+            .logo {
+                display: inline-block;
+                height: 55px;
+                width: 157px;
+                background-image: url(../../assets/logo99.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            p {
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.45);
+                margin-top: 12px;
+                margin-bottom: 40px;
+            }
+        }
+        .tabs {
+            width: 368px;
+            margin: 0 auto;
+        }
+        .input {
+            height: 40px;
+            line-height: 40px;
+        }
+        .loginFormButton {
+            width: 100%;
+        }
+        :global {
+            .ant-tabs-nav-scroll {
+                text-align: center;
+            }
+            .ant-tabs-bar {
+                border: none;
+            }
+        }
+    }
+    .footer {
+        background: none;
+        text-align: center;
+    }
+}
